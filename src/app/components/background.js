@@ -56,7 +56,7 @@ function Scene({ currentSection, setIsLoading }) {
   return (
     <>
       <ambientLight intensity={0.5} /> {/* Luz ambiental */}
-      <directionalLight position={[5, 20, 5]} intensity={3} />{" "}
+      <directionalLight position={[5, 20, 5]} intensity={3} />
       {/* Luz direccional */}
       <pointLight position={[0, 10, 10]} intensity={1} /> {/* Luz puntual */}
       <Environment preset="city" /> {/* Entorno para iluminación realista */}
@@ -64,7 +64,7 @@ function Scene({ currentSection, setIsLoading }) {
         modelPath="/models/room.glb"
         modelRef={modelRef}
         setIsLoading={setIsLoading}
-      />{" "}
+      />
       {/* Modelo 3D */}
       <OrbitControls enableZoom={false} />
     </>

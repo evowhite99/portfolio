@@ -125,7 +125,6 @@ export default function Projects({ language }) {
       <div className="text-center text-white mt-20 mb-6 ">
         <div className="rounded-2xl mx-auto w-3/12 p-2 hover:bg-blue-400 duration-300">
           <h1 className="text-3xl font-bold ">
-            {" "}
             {languages[language].titleContent}
           </h1>
           <p>{languages[language].descriptionContent}</p>
