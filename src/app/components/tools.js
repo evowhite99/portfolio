@@ -37,7 +37,6 @@ export default function Tools({ language }) {
       <div className="text-center text-white mb-6">
         <div className="hover:bg-blue-400 duration-300 rounded-3xl pt-5 pb-5">
           <h1 className="text-3xl font-bold mb-5">
-            {" "}
             {languages[language].tools1}
           </h1>
           <div className="grid grid-cols-6 gap-4">
@@ -57,7 +56,6 @@ export default function Tools({ language }) {
         </div>
         <div className="hover:bg-blue-400 duration-300 rounded-3xl pt-5 pb-5 mt-32">
           <h1 className="text-3xl font-bold  mb-5">
-            {" "}
             {languages[language].tools2}
           </h1>
           <div className="grid grid-cols-6 gap-4">
