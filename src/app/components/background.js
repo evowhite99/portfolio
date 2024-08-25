@@ -22,12 +22,30 @@ function Scene({ currentSection, setIsLoading }) {
   const modelRef = useRef(); // Referencia para el modelo 3D
 
   useEffect(() => {
+    const isMobile = window.innerWidth <= 768;
+
+    // Define posiciones de cámara y modelo para escritorio y móvil
     const targetPositions = {
-      0: { modelPos: [0, -30, 0], cameraPos: [350, 60, 350] },
-      1: { modelPos: [208, -75.5, -97.3], cameraPos: [100, 23, 0] },
-      2: { modelPos: [-40, 97, -65], cameraPos: [3, 180, 0] },
-      3: { modelPos: [-80, -100, 470], cameraPos: [0, 50, 350] },
-      4: { modelPos: [240, -150, -93], cameraPos: [100, 30, 0] },
+      0: {
+        modelPos: isMobile ? [0, 70, 0] : [0, -30, 0],
+        cameraPos: isMobile ? [550, 200, 550] : [350, 60, 350],
+      },
+      1: {
+        modelPos: isMobile ? [200, -75.5, -97.3] : [208, -75.5, -97.3],
+        cameraPos: isMobile ? [100, 23, 0] : [100, 23, 0],
+      },
+      2: {
+        modelPos: isMobile ? [-20, 50, -30] : [-40, 97, -65],
+        cameraPos: isMobile ? [50, 100, 50] : [3, 180, 0],
+      },
+      3: {
+        modelPos: isMobile ? [-40, -50, 200] : [-80, -100, 470],
+        cameraPos: isMobile ? [0, 30, 200] : [0, 50, 350],
+      },
+      4: {
+        modelPos: isMobile ? [120, -80, -50] : [240, -150, -93],
+        cameraPos: isMobile ? [80, 30, 50] : [100, 30, 0],
+      },
     };
 
     const targetPosition = targetPositions[currentSection];

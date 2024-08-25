@@ -4,7 +4,8 @@ export const languages = {
     contact: "Contacto",
     titlePresentation: "Diseñador y desarrollador full-stack",
     descriptionPresentation: "Me dedico a programar y diseñar páginas web",
-    titleAboutMe: "Hola, soy Rubén ¡Un placer conocerte!",
+    titleAboutMe1: "Hola, soy Rubén",
+    titleAboutMe2: "¡Un placer conocerte!",
     descriptionAboutMe1:
       "En 2023 terminé mis estudios y me dedico al desarrollo web.",
     descriptionAboutMe2:
