@@ -11,7 +11,7 @@ export default function Header({ language, setLanguage }) {
   };
 
   return (
-    <header className="relative w-full  flex justify-between lg:p-10 pt-10 pb-10 pl-5 pr-5 mb-72 lg:text-2xl text-sm font-bold hover:bg-blue-400 duration-300">
+    <header className="relative w-full  flex justify-between lg:p-10 pt-10 pb-10 pl-5 pr-5 mb-64 lg:text-2xl text-sm font-bold hover:bg-blue-400 duration-300">
       <div className=" px-2 text-left text-white ">Rubén Pérez Lara</div>
 
       <div className="flex ">

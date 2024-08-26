@@ -26,6 +26,8 @@ export default function Home() {
     const storedLanguage = window.localStorage.getItem("language") || "ES";
     setLanguage(storedLanguage);
 
+    window.scrollTo(0, 0);
+
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       let current = 0;

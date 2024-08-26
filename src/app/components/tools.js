@@ -39,7 +39,7 @@ export default function Tools({ language }) {
           <h1 className="text-3xl font-bold mb-5">
             {languages[language].tools1}
           </h1>
-          <div className="grid grid-cols-6 gap-4">
+          <div className="grid lg:grid-cols-6 grid-cols-3  gap-4">
             {languagesVar.map((language, index) => (
               <div key={index} className="flex flex-col items-center">
                 <Image
@@ -58,7 +58,7 @@ export default function Tools({ language }) {
           <h1 className="text-3xl font-bold  mb-5">
             {languages[language].tools2}
           </h1>
-          <div className="grid grid-cols-6 gap-4">
+          <div className="grid lg:grid-cols-6 grid-cols-3 gap-4">
             {tools.map((tool, index) => (
               <div key={index} className="flex flex-col items-center">
                 <Image

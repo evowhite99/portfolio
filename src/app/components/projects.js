@@ -27,7 +27,7 @@ export default function Projects({ language }) {
 
     {
       image: "/images/TailwindPhoto.webp",
-      link: "https://example.com/project1",
+      link: "https://tailwind.rubenportfolio.com",
       info1: `${languages[language].projectTailwind1}`,
       info2: `${languages[language].projectTailwind2}`,
     },
@@ -60,14 +60,14 @@ export default function Projects({ language }) {
     >
       {/* Sección de Proyectos */}
       <div className="text-center text-white mb-6 ">
-        <div className="rounded-2xl mx-auto w-2/5 p-2 hover:bg-blue-400 duration-300">
+        <div className="rounded-2xl mx-auto lg:w-2/5 p-2 hover:bg-blue-400 duration-300">
           <h1 className="text-3xl font-bold">
             {languages[language].titleProjects}
           </h1>
           <div className="">{languages[language].descriptionProjects}</div>
         </div>
       </div>
-      <div className="grid grid-cols-3 content-center gap-6">
+      <div className="grid lg:grid-cols-3 grid-cols-1 content-center gap-6">
         {projects.slice(0, visibleProjects).map((project, index) => (
           <div
             key={index}
@@ -79,14 +79,16 @@ export default function Projects({ language }) {
               alt={`Project ${index + 1}`}
               width={500}
               height={100}
-              className={`border border-blue-500 transition-all duration-300 ${
+              className={`border lg:h-auto h-56 border-blue-500 transition-all duration-300 ${
                 infoVisible === index ? "opacity-50" : "opacity-100"
               }`}
             />
             {infoVisible === index && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white px-auto flex-col">
-                <h1 className="font-bold">{project.info1}</h1>
-                <p className="ml-10 mr-10">{project.info2}</p>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-75 text-white px-auto flex-col ">
+                <h1 className="ml-10 mr-10 font-bold lg:text-base text-sm">
+                  {project.info1}
+                </h1>
+                <p className="ml-10 mr-10 text-sm">{project.info2}</p>
               </div>
             )}
             <div className="absolute inset-0 flex justify-start items-end opacity-100 group-hover:opacity-100 transition-opacity duration-300">
@@ -123,7 +125,7 @@ export default function Projects({ language }) {
 
       {/* Sección de Galería - Video con botón para mostrar/ocultar */}
       <div className="text-center text-white mt-20 mb-6 ">
-        <div className="rounded-2xl mx-auto w-3/12 p-2 hover:bg-blue-400 duration-300">
+        <div className="rounded-2xl mx-auto lg:w-3/12 p-2 w-9/12 hover:bg-blue-400 duration-300">
           <h1 className="text-3xl font-bold ">
             {languages[language].titleContent}
           </h1>
@@ -142,7 +144,7 @@ export default function Projects({ language }) {
 
         {isVideoVisible && (
           <>
-            <p className="w-2/5 text-center mb-2">
+            <p className="lg:w-2/5 text-center mb-2">
               {languages[language].alertText}
             </p>
 
@@ -150,7 +152,7 @@ export default function Projects({ language }) {
               controls
               width="480"
               height="360"
-              className="border border-blue-500 rounded-lg shadow-lg"
+              className="lg:h-auto h-56  border-blue-500 rounded-lg shadow-lg"
             >
               <source src={galleryItems[0].src} type="video/mp4" />
               Your browser does not support the video tag.

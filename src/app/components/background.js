@@ -27,7 +27,7 @@ function Scene({ currentSection, setIsLoading }) {
     // Define posiciones de cámara y modelo para escritorio y móvil
     const targetPositions = {
       0: {
-        modelPos: isMobile ? [0, 70, 0] : [0, -30, 0],
+        modelPos: isMobile ? [0, 100, 0] : [0, -30, 0],
         cameraPos: isMobile ? [550, 200, 550] : [350, 60, 350],
       },
       1: {
@@ -39,12 +39,12 @@ function Scene({ currentSection, setIsLoading }) {
         cameraPos: isMobile ? [50, 100, 50] : [3, 180, 0],
       },
       3: {
-        modelPos: isMobile ? [-40, -50, 200] : [-80, -100, 470],
+        modelPos: isMobile ? [-80, -130, 260] : [-80, -100, 470],
         cameraPos: isMobile ? [0, 30, 200] : [0, 50, 350],
       },
       4: {
-        modelPos: isMobile ? [120, -80, -50] : [240, -150, -93],
-        cameraPos: isMobile ? [80, 30, 50] : [100, 30, 0],
+        modelPos: isMobile ? [240, -150, -93] : [240, -150, -93],
+        cameraPos: isMobile ? [100, 30, 0] : [100, 30, 0],
       },
     };
 
@@ -84,7 +84,11 @@ function Scene({ currentSection, setIsLoading }) {
         setIsLoading={setIsLoading}
       />
       {/* Modelo 3D */}
-      <OrbitControls enableZoom={false} />
+      <OrbitControls
+        enableZoom={false}
+        enableRotate={false}
+        enablePan={false}
+      />
     </>
   );
 }
