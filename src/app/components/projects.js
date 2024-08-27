@@ -60,7 +60,10 @@ export default function Projects({ language }) {
     >
       {/* Sección de Proyectos */}
       <div className="text-center text-white mb-6 ">
-        <div className="rounded-2xl mx-auto lg:w-2/6 p-2 hover:bg-blue-400 hover:bg-opacity-60 duration-300">
+        <div
+          id="custom-shadow"
+          className="rounded-2xl mx-auto lg:w-2/6 p-2 hover:bg-blue-400 hover:bg-opacity-80 duration-300"
+        >
           <h1 className="text-3xl font-bold">
             {languages[language].titleProjects}
           </h1>
@@ -125,7 +128,10 @@ export default function Projects({ language }) {
 
       {/* Sección de Galería - Video con botón para mostrar/ocultar */}
       <div className="text-center text-white mt-20 mb-6 ">
-        <div className="rounded-2xl mx-auto lg:w-3/12 p-2 w-9/12 hover:bg-blue-400 hover:bg-opacity-60 duration-300">
+        <div
+          id="custom-shadow"
+          className="rounded-2xl mx-auto lg:w-3/12 p-2 w-9/12 hover:bg-blue-400 hover:bg-opacity-80 duration-300"
+        >
           <h1 className="text-3xl font-bold ">
             {languages[language].titleContent}
           </h1>

@@ -14,7 +14,10 @@ export default function AboutMe({ language }) {
                      w-20 h-28 lg:w-36 lg:h-52"
         />
       </div>
-      <div className="hover:bg-blue-400 hover:bg-opacity-60 p-4 duration-300 mx-auto lg:w-3/5 rounded-2xl lg:p-4">
+      <div
+        id="custom-shadow"
+        className="hover:bg-blue-400 hover:bg-opacity-80  p-4 duration-300 mx-auto lg:w-3/5 rounded-2xl lg:p-4"
+      >
         <div className="text-center text-white mb-6">
           <h1 className="lg:text-3xl text-2xl font-bold">
             {languages[language].titleAboutMe1}

@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+#custom-shadow:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+#custom-shadow2:hover {
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.25), 0 0px 25px rgba(0, 0, 0, 0.22);
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 10px;

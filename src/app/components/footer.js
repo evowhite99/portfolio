@@ -24,7 +24,10 @@ export default function Footer({ language }) {
   }, []);
 
   return (
-    <div className="relative flex-col flex justify-center items-center p-10  w-full hover:bg-blue-400 hover:bg-opacity-60  px-2  duration-300">
+    <div
+      id="custom-shadow2"
+      className="relative flex-col flex justify-center items-center p-10  w-full hover:bg-blue-400 hover:bg-opacity-80  px-2  duration-300"
+    >
       <div className="mb-10"> {languages[language].footer1}</div>
 
       <a
