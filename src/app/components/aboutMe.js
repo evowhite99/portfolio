@@ -10,11 +10,11 @@ export default function AboutMe({ language }) {
           alt="Photo developer"
           width={130}
           height={100}
-          className="rounded-3xl border-4 hover:border-blue-500 duration-150 
+          className="rounded-3xl border-4 hover:border-blue-500 hover:border-opacity-60 duration-150 
                      w-20 h-28 lg:w-36 lg:h-52"
         />
       </div>
-      <div className="hover:bg-blue-400 p-4 duration-300 mx-auto lg:w-3/5 rounded-2xl lg:p-4">
+      <div className="hover:bg-blue-400 hover:bg-opacity-60 p-4 duration-300 mx-auto lg:w-3/5 rounded-2xl lg:p-4">
         <div className="text-center text-white mb-6">
           <h1 className="lg:text-3xl text-2xl font-bold">
             {languages[language].titleAboutMe1}

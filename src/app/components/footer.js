@@ -24,7 +24,7 @@ export default function Footer({ language }) {
   }, []);
 
   return (
-    <div className="relative flex-col flex justify-center items-center p-10  w-full hover:bg-blue-400  px-2  duration-300">
+    <div className="relative flex-col flex justify-center items-center p-10  w-full hover:bg-blue-400 hover:bg-opacity-60  px-2  duration-300">
       <div className="mb-10"> {languages[language].footer1}</div>
 
       <a
@@ -42,7 +42,7 @@ export default function Footer({ language }) {
       <div> {languages[language].footer2}</div>
       <div>
         <img
-          className={`fixed lg:bottom-5 bottom-2 lg:right-7 right-2 lg:h-10 h-8 animate-pulse bg-blue-500 dark:bg-gray-200 rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-125 ${
+          className={`fixed lg:bottom-5 bottom-2 lg:right-7 right-2 lg:h-10 h-8 animate-pulse  bg-gray-200 rounded-md cursor-pointer transition-all duration-300 ease-in-out hover:scale-125 ${
             isVisible
               ? "opacity-100 translate-x-0"
               : "opacity-100 translate-x-40"

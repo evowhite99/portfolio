@@ -35,7 +35,7 @@ export default function Tools({ language }) {
   return (
     <div className="relative w-full flex flex-col justify-center p-10 mt-52 mb-96">
       <div className="text-center text-white mb-6">
-        <div className="hover:bg-blue-400 duration-300 rounded-3xl pt-5 pb-5">
+        <div className="hover:bg-blue-400 hover:bg-opacity-60 duration-300 rounded-3xl pt-5 pb-5">
           <h1 className="text-3xl font-bold mb-5">
             {languages[language].tools1}
           </h1>
@@ -54,7 +54,7 @@ export default function Tools({ language }) {
             ))}
           </div>
         </div>
-        <div className="hover:bg-blue-400 duration-300 rounded-3xl pt-5 pb-5 mt-32">
+        <div className="hover:bg-blue-400 hover:bg-opacity-60 duration-300 rounded-3xl pt-5 pb-5 mt-32">
           <h1 className="text-3xl font-bold  mb-5">
             {languages[language].tools2}
           </h1>
