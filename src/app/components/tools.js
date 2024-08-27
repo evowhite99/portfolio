@@ -33,7 +33,7 @@ export default function Tools({ language }) {
     { name: "Blender", src: "/images/blender.png" },
   ];
   return (
-    <div className="relative w-full flex flex-col justify-center p-10 mt-52 mb-96">
+    <div className="relative w-full flex flex-col justify-center p-10 mt-52 mb-52">
       <div className="text-center text-white mb-6">
         <div className="hover:bg-blue-400 hover:bg-opacity-60 duration-300 rounded-3xl pt-5 pb-5">
           <h1 className="text-3xl font-bold mb-5">

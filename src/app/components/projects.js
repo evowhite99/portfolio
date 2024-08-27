@@ -55,7 +55,7 @@ export default function Projects({ language }) {
 
   return (
     <div
-      className="relative w-full flex flex-col justify-center p-10 mt-60 mb-96"
+      className="relative w-full flex flex-col justify-center p-10 mt-60 mb-52"
       onClick={handleBodyClick}
     >
       {/* Sección de Proyectos */}

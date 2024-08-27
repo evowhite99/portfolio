@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function AboutMe({ language }) {
   return (
-    <div className="relative w-full flex flex-col justify-center lg:p-10 p-4 mt-52 mb-96 ">
+    <div className="relative w-full flex flex-col justify-center lg:p-10 p-4 mt-52 mb-52 ">
       <div className="flex justify-center mb-6">
         <Image
           src="/images/photo.webp"
