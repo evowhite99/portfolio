@@ -66,7 +66,7 @@ export default function Home() {
       {!isLoading && (
         <>
           <Header language={language} setLanguage={setLanguage} />
-          <section>
+          <section className="lg:py-0 pt-64 ">
             <Presentation language={language} />
           </section>
           <section>

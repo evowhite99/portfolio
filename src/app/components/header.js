@@ -13,7 +13,7 @@ export default function Header({ language, setLanguage }) {
   return (
     <header
       id="custom-shadow"
-      className="relative w-full  flex justify-between lg:p-10 pt-10 pb-10 pl-4 pr-4 mb-64 lg:text-2xl text-sm font-bold hover:bg-blue-400 duration-300 hover:bg-opacity-80 
+      className="relative w-full  flex justify-between lg:p-10 pt-10 pb-10 pl-4 pr-4 lg:mb-64 lg:text-2xl text-sm font-bold hover:bg-blue-400 duration-300 hover:bg-opacity-80 
 
 "
     >
@@ -21,15 +21,17 @@ export default function Header({ language, setLanguage }) {
 
       <div className="flex ">
         <div
+          id="custom-shadow"
           onClick={toggleLanguage}
-          className="cursor-pointer text-right text-white lg:mr-10  hover:bg-green-400 rounded-xl px-2 pb-1 lg:hover:scale-125 hover:scale-110 duration-300  mr-1"
+          className="cursor-pointer text-right text-white lg:mr-10  hover:bg-blue-500 rounded-xl px-2 pb-1 lg:hover:scale-125 hover:scale-110 duration-300  mr-1 "
         >
           <span className="">{language === "ES" ? "Inglés" : "Spanish"}</span>
         </div>
 
         <a
+          id="custom-shadow"
           href="mailto:inforubentrabajos@gmail.com"
-          className=" cursor-pointer text-right text-white lg:mr-10  hover:bg-green-400 rounded-xl px-2 pb-1  lg:hover:scale-125 hover:scale-110 duration-300"
+          className=" cursor-pointer text-right text-white lg:mr-10  hover:bg-blue-500 rounded-xl px-2 pb-1  lg:hover:scale-125 hover:scale-110 duration-300"
         >
           {languages[language].contact}
         </a>

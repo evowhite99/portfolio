@@ -10,8 +10,9 @@ export default function Message({ language }) {
       </h1>
       <div className="mx-auto mt-4 mb-10">{languages[language].message2}</div>
       <a
+        id="custom-shadow"
         href="mailto:inforubentrabajos@gmail.com"
-        className="cursor-pointer text-center text-white hover:bg-green-400 rounded-xl hover:scale-125 duration-300  text-2xl font-bold lg:w-3/12 mx-auto"
+        className="cursor-pointer text-center text-white hover:bg-blue-500 rounded-xl hover:scale-125 duration-300  text-2xl font-bold lg:w-3/12 mx-auto"
       >
         {languages[language].contact}
       </a>
