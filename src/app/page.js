@@ -44,6 +44,12 @@ export default function Home() {
         ) {
           current = index;
         }
+
+        if (rect.top <= window.innerHeight - offset && rect.bottom >= offset) {
+          section.classList.add("show");
+        } else {
+          section.classList.remove("show");
+        }
       });
 
       setCurrentSection(current);
@@ -69,16 +75,16 @@ export default function Home() {
           <section className="lg:py-0 pt-64 ">
             <Presentation language={language} />
           </section>
-          <section>
+          <section className="fade-in-left">
             <AboutMe language={language} />
           </section>
-          <section>
+          <section className="fade-in-left">
             <Projects language={language} />
           </section>
-          <section>
+          <section className="fade-in-left">
             <Tools language={language} />
           </section>
-          <section>
+          <section className="fade-in-left">
             <Message language={language} />
           </section>
           <Footer language={language} />
