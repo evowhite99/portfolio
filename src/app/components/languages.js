@@ -25,7 +25,6 @@ export const languages = {
     descriptionContent: "Tienda online",
     buttonLoadContent1: "Ver contenido",
     buttonLoadContent2: "Ocultar contenido",
-    buttonLoadContent2: "Ocultar contenido",
     alertText:
       "(Si hay lag en la página web por mostrar el vídeo, vuelve a ocultar el vídeo para no empeorar la experiencia).",
     portfolioThreeJS1: "Portfolio React convertido a Next.js y Three.js",
@@ -55,7 +54,8 @@ export const languages = {
     titlePresentation: "Designer and full-stack developer",
     descriptionPresentation:
       "I am dedicated to programming and designing web pages",
-    titleAboutMe: "Hi, I'm Ruben. Nice to meet you!",
+    titleAboutMe1: "Hola, soy Rubén",
+    titleAboutMe2: "¡Un placer conocerte!",
     descriptionAboutMe1:
       "In 2023 I finished my studies and I am dedicated to web development.",
     descriptionAboutMe2:

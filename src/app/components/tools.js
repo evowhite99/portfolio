@@ -7,7 +7,7 @@ export default function Tools({ language }) {
     { name: "Bootstrap", src: "/images/bootstrap.png" },
     { name: "Tailwind CSS", src: "/images/tailwind.png" },
     { name: "JavaScript", src: "/images/javascript.png" },
-    { name: "React", src: "/images/react.png" },
+    { name: "React.js", src: "/images/react.png" },
     { name: "Next.js", src: "/images/next.png" },
     { name: "Three.js", src: "/images/three.png" },
     { name: "PHP", src: "/images/php.png" },
