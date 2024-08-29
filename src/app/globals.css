@@ -4,13 +4,11 @@
 
 .fade-in-left {
   opacity: 0;
-  transform: translateX(-1rem);
-  transition: opacity 1.5s ease-out, transform 1.2s ease-out;
+  transition: opacity 1.5s ease-out;
 }
 
 .fade-in-left.show {
   opacity: 1;
-  transform: translateX(0);
 }
 
 #custom-shadow:hover {
