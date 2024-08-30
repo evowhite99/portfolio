@@ -4,6 +4,7 @@
 //import React, { Suspense, useState, useEffect } from "react";
 //import dynamic from "next/dynamic";
 //import { Canvas, useThree } from "@react-three/fiber";
+import { throttle } from "lodash";
 import React, { useState, useEffect, lazy, Suspense } from "react";
 
 //import { OrbitControls, Environment } from "@react-three/drei";
@@ -34,7 +35,7 @@ export default function Home() {
       setIsLoading(false);
     }, 0); // Reduce este tiempo si es posible
 
-    const handleScroll = () => {
+    const handleScroll = throttle(() => {
       const sections = document.querySelectorAll("section");
       let current = 0;
 
@@ -59,7 +60,7 @@ export default function Home() {
       });
 
       setCurrentSection(current);
-    };
+    }, 0); // Ajusta el tiempo según sea necesario
 
     window.addEventListener("scroll", handleScroll);
     return () => {
