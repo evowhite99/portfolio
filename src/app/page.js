@@ -1,28 +1,24 @@
 "use client";
-//import Image from "next/image";
-//import PageTransition from "./components/PageTransition";
-//import React, { Suspense, useState, useEffect } from "react";
-//import dynamic from "next/dynamic";
-//import { Canvas, useThree } from "@react-three/fiber";
-import React, { useState, useEffect } from "react";
 
-//import { OrbitControls, Environment } from "@react-three/drei";
+import React, { useState, useEffect, useMemo, lazy, Suspense } from "react";
+
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Presentation from "./components/presentation";
-import AboutMe from "./components/aboutMe";
-import Projects from "./components/projects";
-import Tools from "./components/tools";
-import Message from "./components/message";
 import Background from "./components/background";
+
+const AboutMe = lazy(() => import("./components/aboutMe"));
+const Projects = lazy(() => import("./components/projects"));
+const Tools = lazy(() => import("./components/tools"));
+const Message = lazy(() => import("./components/message"));
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
-  const [language, setLanguage] = useState("ES");
-  const [isLoading, setIsLoading] = useState(true); // Estado para gestionar el estado de carga
+  const [language, setLanguage] = useState("ES"); // Inicializa con "ES" por defecto
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Este efecto solo se ejecuta en el lado del cliente
+    // Este código solo se ejecuta en el cliente
     const storedLanguage = window.localStorage.getItem("language") || "ES";
     setLanguage(storedLanguage);
 
@@ -35,12 +31,12 @@ export default function Home() {
       sections.forEach((section, index) => {
         const rect = section.getBoundingClientRect();
         const sectionHeight = rect.height;
-        const offset = window.innerHeight / 4; // Ajusta este valor según el tamaño de tu viewport y las secciones
+        const offset = window.innerHeight / 4;
 
         if (
           rect.top <= window.innerHeight / 2 + offset &&
           rect.bottom >= window.innerHeight / 2 - offset &&
-          sectionHeight > offset * 2 // Verifica que la sección tenga suficiente altura
+          sectionHeight > offset * 2
         ) {
           current = index;
         }
@@ -59,7 +55,7 @@ export default function Home() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, []); // El array vacío asegura que este efecto se ejecute solo una vez en el cliente
 
   return (
     <main className="relative z-10 flex min-h-screen flex-col">
@@ -75,18 +71,20 @@ export default function Home() {
           <section className="lg:py-0 pt-64 ">
             <Presentation language={language} />
           </section>
-          <section className="fade-in-left">
-            <AboutMe language={language} />
-          </section>
-          <section className="fade-in-left">
-            <Projects language={language} />
-          </section>
-          <section className="fade-in-left">
-            <Tools language={language} />
-          </section>
-          <section className="fade-in-left">
-            <Message language={language} />
-          </section>
+          <Suspense fallback={<div>Cargando sección...</div>}>
+            <section className="fade-in-left">
+              <AboutMe language={language} />
+            </section>
+            <section className="fade-in-left">
+              <Projects language={language} />
+            </section>
+            <section className="fade-in-left">
+              <Tools language={language} />
+            </section>
+            <section className="fade-in-left">
+              <Message language={language} />
+            </section>
+          </Suspense>
           <Footer language={language} />
         </>
       )}
