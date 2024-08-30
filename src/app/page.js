@@ -72,42 +72,35 @@ export default function Home() {
 
   return (
     <main className="relative z-10 flex min-h-screen flex-col">
-      {isLoading && (
-        <div className="fixed inset-0 flex items-center justify-center bg-blue-400 z-50">
-          <div className="text-white text-2xl">Cargando...</div>
-        </div>
-      )}
-      {!isLoading && (
-        <>
-          <Background
-            currentSection={currentSection}
-            setIsLoading={setIsLoading}
-          />
-          <Header language={language} setLanguage={setLanguage} />
-          <section className="lg:py-0 pt-64">
-            <Presentation language={language} />
-          </section>
+      <>
+        <Background
+          currentSection={currentSection}
+          setIsLoading={setIsLoading}
+        />
+        <Header language={language} setLanguage={setLanguage} />
+        <section className="lg:py-0 pt-64">
+          <Presentation language={language} />
+        </section>
+        <section className="fade-in-left">
+          <AboutMe language={language} />
+        </section>
+        <Suspense fallback={null}>
           <section className="fade-in-left">
-            <AboutMe language={language} />
+            <Projects language={language} />
           </section>
-          <Suspense fallback={null}>
-            <section className="fade-in-left">
-              <Projects language={language} />
-            </section>
-          </Suspense>
-          <Suspense fallback={null}>
-            <section className="fade-in-left">
-              <Tools language={language} />
-            </section>
-          </Suspense>
-          <Suspense fallback={null}>
-            <section className="fade-in-left">
-              <Message language={language} />
-            </section>
-          </Suspense>
-          <Footer language={language} />
-        </>
-      )}
+        </Suspense>
+        <Suspense fallback={null}>
+          <section className="fade-in-left">
+            <Tools language={language} />
+          </section>
+        </Suspense>
+        <Suspense fallback={null}>
+          <section className="fade-in-left">
+            <Message language={language} />
+          </section>
+        </Suspense>
+        <Footer language={language} />
+      </>
     </main>
   );
 }
