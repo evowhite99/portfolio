@@ -28,7 +28,10 @@ export default function Home() {
     const storedLanguage = window.localStorage.getItem("language") || "ES";
     setLanguage(storedLanguage);
 
-    window.scrollTo(0, 0);
+    // Asegúrate de que la página se desplace hacia arriba
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
 
     // Simula un tiempo de carga mínimo para la pantalla de "Cargando..."
     const timeout = setTimeout(() => {
