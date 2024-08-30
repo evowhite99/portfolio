@@ -1,7 +1,8 @@
+import React from "react";
 import { languages } from "../components/languages";
 import Image from "next/image";
 
-export default function AboutMe({ language }) {
+function AboutMe({ language }) {
   return (
     <div className="relative w-full flex flex-col justify-center lg:p-10 p-4 mt-52 mb-52 ">
       <div className="flex justify-center mb-6">
@@ -47,3 +48,5 @@ export default function AboutMe({ language }) {
     </div>
   );
 }
+
+export default React.memo(AboutMe);

@@ -1,5 +1,7 @@
+import React from "react";
 import { languages } from "../components/languages";
-export default function Message({ language }) {
+
+function Message({ language }) {
   return (
     <div
       id="custom-shadow"
@@ -19,3 +21,5 @@ export default function Message({ language }) {
     </div>
   );
 }
+
+export default React.memo(Message);

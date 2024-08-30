@@ -1,6 +1,7 @@
+import React from "react";
 import { languages } from "../components/languages";
 
-export default function Presentation({ language }) {
+function Presentation({ language }) {
   return (
     <div className="flex items-center justify-center">
       <div
@@ -33,3 +34,5 @@ export default function Presentation({ language }) {
     </div>
   );
 }
+
+export default React.memo(Presentation);

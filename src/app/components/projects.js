@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { languages } from "../components/languages";
 import Image from "next/image";
 
@@ -7,35 +7,40 @@ export default function Projects({ language }) {
   const [infoVisible, setInfoVisible] = useState(null);
   const [isVideoVisible, setIsVideoVisible] = useState(false);
 
-  const projects = [
-    {
-      image: "/images/portfolioThreeJS.webp",
-      link: "https://www.rubenportfolio.com",
-      info1: `${languages[language].portfolioThreeJS1}`,
-      info2: `${languages[language].portfolioThreeJS2}`,
-    },
-    {
-      image: "/images/ShopifyPhoto.webp",
-      info1: `${languages[language].onlineStore1}`,
-      info2: `${languages[language].onlineStore2}`,
-    },
-    {
-      image: "/images/WordPressPhoto.webp",
-      info1: `${languages[language].portfolioWordPress1}`,
-      info2: `${languages[language].portfolioWordPress2}`,
-    },
+  const projects = useMemo(
+    () => [
+      {
+        image: "/images/portfolioThreeJS.webp",
+        link: "https://www.rubenportfolio.com",
+        info1: `${languages[language].portfolioThreeJS1}`,
+        info2: `${languages[language].portfolioThreeJS2}`,
+      },
+      {
+        image: "/images/ShopifyPhoto.webp",
+        info1: `${languages[language].onlineStore1}`,
+        info2: `${languages[language].onlineStore2}`,
+      },
+      {
+        image: "/images/WordPressPhoto.webp",
+        info1: `${languages[language].portfolioWordPress1}`,
+        info2: `${languages[language].portfolioWordPress2}`,
+      },
+      {
+        image: "/images/TailwindPhoto.webp",
+        link: "https://tailwind.rubenportfolio.com",
+        info1: `${languages[language].projectTailwind1}`,
+        info2: `${languages[language].projectTailwind2}`,
+      },
+    ],
+    [language]
+  );
 
-    {
-      image: "/images/TailwindPhoto.webp",
-      link: "https://tailwind.rubenportfolio.com",
-      info1: `${languages[language].projectTailwind1}`,
-      info2: `${languages[language].projectTailwind2}`,
-    },
-  ];
-
-  const galleryItems = [
-    { type: "video", src: "/videos/ShopifyVideo.mp4", alt: "Video Shopify" },
-  ];
+  const galleryItems = useMemo(
+    () => [
+      { type: "video", src: "/videos/ShopifyVideo.mp4", alt: "Video Shopify" },
+    ],
+    []
+  );
 
   const loadMoreProjects = () => {
     setVisibleProjects((prev) => Math.min(prev + 3, projects.length));

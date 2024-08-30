@@ -90,17 +90,17 @@ export default function Home() {
           <section className="fade-in-left">
             <AboutMe language={language} />
           </section>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={null}>
             <section className="fade-in-left">
               <Projects language={language} />
             </section>
           </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={null}>
             <section className="fade-in-left">
               <Tools language={language} />
             </section>
           </Suspense>
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={null}>
             <section className="fade-in-left">
               <Message language={language} />
             </section>
