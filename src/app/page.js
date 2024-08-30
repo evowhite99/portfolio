@@ -60,7 +60,7 @@ export default function Home() {
       });
 
       setCurrentSection(current);
-    }, 100); // Ajusta el tiempo según sea necesario
+    }, 0); // Ajusta el tiempo según sea necesario
 
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -71,13 +71,11 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
-    // Forzar el scroll hacia arriba después de que el componente se haya montado completamente
-    const scrollTimeout = setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
+    const scrollToTop = () => window.scrollTo(0, 0);
+    window.addEventListener("beforeunload", scrollToTop);
 
     return () => {
-      clearTimeout(scrollTimeout);
+      window.removeEventListener("beforeunload", scrollToTop);
     };
   }, []);
 
