@@ -29,6 +29,11 @@ export default function Home() {
 
     window.scrollTo(0, 0);
 
+    // Simula un tiempo de carga mínimo para la pantalla de "Cargando..."
+    const timeout = setTimeout(() => {
+      setIsLoading(false);
+    }, 0); // Reduce este tiempo si es posible
+
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
       let current = 0;
@@ -58,6 +63,8 @@ export default function Home() {
 
     window.addEventListener("scroll", handleScroll);
     return () => {
+      clearTimeout(timeout); // Limpia el timeout
+
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -69,9 +76,12 @@ export default function Home() {
           <div className="text-white text-2xl">Cargando...</div>
         </div>
       )}
-      <Background currentSection={currentSection} setIsLoading={setIsLoading} />
       {!isLoading && (
         <>
+          <Background
+            currentSection={currentSection}
+            setIsLoading={setIsLoading}
+          />
           <Header language={language} setLanguage={setLanguage} />
           <section className="lg:py-0 pt-64">
             <Presentation language={language} />
