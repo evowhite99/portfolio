@@ -28,10 +28,7 @@ export default function Home() {
     const storedLanguage = window.localStorage.getItem("language") || "ES";
     setLanguage(storedLanguage);
 
-    // Asegúrate de que la página se desplace hacia arriba
-    setTimeout(() => {
-      window.scrollTo(0, 0);
-    }, 0);
+    window.scrollTo(0, 0);
 
     // Simula un tiempo de carga mínimo para la pantalla de "Cargando..."
     const timeout = setTimeout(() => {
@@ -70,6 +67,17 @@ export default function Home() {
       clearTimeout(timeout); // Limpia el timeout
 
       window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Forzar el scroll hacia arriba después de que el componente se haya montado completamente
+    const scrollTimeout = setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 0);
+
+    return () => {
+      clearTimeout(scrollTimeout);
     };
   }, []);
 
