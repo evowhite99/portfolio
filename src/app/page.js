@@ -60,7 +60,7 @@ export default function Home() {
       });
 
       setCurrentSection(current);
-    }, 0); // Ajusta el tiempo según sea necesario
+    }, 100); // Ajusta el tiempo según sea necesario
 
     window.addEventListener("scroll", handleScroll);
     return () => {
