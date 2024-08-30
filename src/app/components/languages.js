@@ -54,8 +54,8 @@ export const languages = {
     titlePresentation: "Designer and full-stack developer",
     descriptionPresentation:
       "I am dedicated to programming and designing web pages",
-    titleAboutMe1: "Hola, soy Rubén",
-    titleAboutMe2: "¡Un placer conocerte!",
+    titleAboutMe1: "Hello, My name is Ruben",
+    titleAboutMe2: "Nice to meet you!",
     descriptionAboutMe1:
       "In 2023 I finished my studies and I am dedicated to web development.",
     descriptionAboutMe2:
