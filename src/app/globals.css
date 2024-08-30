@@ -2,9 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Animación y transición de fade-in-left */
 .fade-in-left {
   opacity: 0;
-  transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in-left.show {
@@ -12,31 +13,30 @@
   transform: translateX(0);
 }
 
+/* Custom shadow */
 #custom-shadow:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 15px rgba(0, 0, 0, 0.3);
+  @apply shadow-custom;
 }
 
-/* width */
+/* Estilos de Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background: #f1f1f1;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #888;
   border-radius: 5px;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
 
+/* Variables de color */
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -51,12 +51,14 @@
   }
 }
 
+/* Utilidades Personalizadas */
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
+/* Definición de fuente Montserrat */
 @font-face {
   font-family: "Montserrat";
   src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
@@ -65,13 +67,9 @@
   font-style: normal;
 }
 
+/* Estilo global para el cuerpo */
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: var(--background-gradient);
   font-family: "Montserrat", sans-serif;
 }
