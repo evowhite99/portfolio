@@ -1,5 +1,5 @@
 import { Canvas, useThree } from "@react-three/fiber";
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, Suspense } from "react";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
 import gsap from "gsap";
 
@@ -73,9 +73,9 @@ function Scene({ currentSection, setIsLoading }) {
 
   return (
     <>
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 20, 5]} intensity={3} />
-      <pointLight position={[0, 10, 10]} intensity={1} />
+      <ambientLight intensity={0.3} />
+      <directionalLight position={[5, 20, 5]} intensity={2} />
+
       <Environment preset="city" />
       <Model
         modelPath="/models/room.glb"
@@ -103,7 +103,7 @@ export default function Background({ currentSection, setIsLoading }) {
         zIndex: -1,
       }}
       gl={{
-        antialias: true,
+        antialias: false,
       }}
       onCreated={({ gl }) => {
         gl.setClearColor("#87CEEB"); // Establecer el color de fondo a azul cielo
