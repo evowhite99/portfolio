@@ -4,17 +4,18 @@
 //import React, { Suspense, useState, useEffect } from "react";
 //import dynamic from "next/dynamic";
 //import { Canvas, useThree } from "@react-three/fiber";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 
 //import { OrbitControls, Environment } from "@react-three/drei";
 import Footer from "./components/footer";
 import Header from "./components/header";
 import Presentation from "./components/presentation";
 import AboutMe from "./components/aboutMe";
-import Projects from "./components/projects";
-import Tools from "./components/tools";
-import Message from "./components/message";
 import Background from "./components/background";
+
+const Projects = lazy(() => import("./components/projects"));
+const Tools = lazy(() => import("./components/tools"));
+const Message = lazy(() => import("./components/message"));
 
 export default function Home() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -72,21 +73,27 @@ export default function Home() {
       {!isLoading && (
         <>
           <Header language={language} setLanguage={setLanguage} />
-          <section className="lg:py-0 pt-64 ">
+          <section className="lg:py-0 pt-64">
             <Presentation language={language} />
           </section>
           <section className="fade-in-left">
             <AboutMe language={language} />
           </section>
-          <section className="fade-in-left">
-            <Projects language={language} />
-          </section>
-          <section className="fade-in-left">
-            <Tools language={language} />
-          </section>
-          <section className="fade-in-left">
-            <Message language={language} />
-          </section>
+          <Suspense fallback={<div>Loading...</div>}>
+            <section className="fade-in-left">
+              <Projects language={language} />
+            </section>
+          </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <section className="fade-in-left">
+              <Tools language={language} />
+            </section>
+          </Suspense>
+          <Suspense fallback={<div>Loading...</div>}>
+            <section className="fade-in-left">
+              <Message language={language} />
+            </section>
+          </Suspense>
           <Footer language={language} />
         </>
       )}
