@@ -1,5 +1,5 @@
 import { Canvas, useThree } from "@react-three/fiber";
-import { useRef, useEffect, Suspense } from "react";
+import { useRef, useEffect } from "react";
 import { OrbitControls, useGLTF, Environment } from "@react-three/drei";
 import gsap from "gsap";
 
