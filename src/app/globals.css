@@ -9,6 +9,7 @@
 
 .fade-in-left.show {
   opacity: 1;
+  transform: translateX(0);
 }
 
 #custom-shadow:hover {
