@@ -28,22 +28,22 @@ function Scene({ currentSection, setIsLoading }) {
     const targetPositions = {
       0: {
         modelPos: isMobile ? [0, 100, 0] : [0, -30, 0],
-        cameraPos: isMobile ? [550, 200, 550] : [350, 60, 350],
+        cameraPos: isMobile ? [550, 220, 550] : [350, 60, 350],
       },
       1: {
-        modelPos: isMobile ? [200, -75.5, -97.3] : [208, -75.5, -97.3],
+        modelPos: isMobile ? [166, -75.5, -97.3] : [202, -75.5, -97.3],
         cameraPos: isMobile ? [100, 23, 0] : [100, 23, 0],
       },
       2: {
-        modelPos: isMobile ? [-20, 50, -30] : [-40, 97, -65],
-        cameraPos: isMobile ? [50, 100, 50] : [3, 180, 0],
+        modelPos: isMobile ? [-70, 10, -65] : [-40, 88, -65],
+        cameraPos: isMobile ? [3, 180, 0] : [3, 180, 0],
       },
       3: {
         modelPos: isMobile ? [-80, -130, 260] : [-80, -100, 470],
         cameraPos: isMobile ? [0, 30, 200] : [0, 50, 350],
       },
       4: {
-        modelPos: isMobile ? [240, -150, -93] : [240, -150, -93],
+        modelPos: isMobile ? [230, -160, -93] : [235, -150, -93],
         cameraPos: isMobile ? [100, 30, 0] : [100, 30, 0],
       },
     };
