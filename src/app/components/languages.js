@@ -47,6 +47,7 @@ export const languages = {
         para colaborar tanto en proyectos individuales como empresariales.`,
     tools1: "Lenguajes y tecnologías",
     tools2: "Herramientas",
+    help: "Pulsa en los textos para añadir color",
   },
   EN: {
     language: "Español",
@@ -95,5 +96,6 @@ export const languages = {
         to collaborate on both individual and business projects.`,
     tools1: "Languages ​​and technologies",
     tools2: "Tools",
+    help: "Click on the texts to add color",
   },
 };

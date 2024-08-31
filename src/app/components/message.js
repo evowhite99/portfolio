@@ -5,7 +5,7 @@ function Message({ language }) {
   return (
     <div
       id="custom-shadow"
-      className="relative flex flex-col justify-center p-10 mt-52 mb-40 hover:bg-blue-400 hover:bg-opacity-80  px-2  duration-300 mx-auto lg:w-5/12 w-10/12 rounded-2xl lg:pl-10 lg:pr-10 text-center text-white "
+      className="relative flex flex-col justify-center p-10 mt-52 mb-24 hover:bg-blue-400 hover:bg-opacity-80  px-2  duration-300 mx-auto lg:w-5/12 w-10/12 rounded-2xl lg:pl-10 lg:pr-10 text-center text-white "
     >
       <h1 className="lg:text-3xl text-xl font-bold">
         {languages[language].message1}
