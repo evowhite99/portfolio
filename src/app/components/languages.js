@@ -2,7 +2,7 @@ export const languages = {
   ES: {
     language: "English",
     contact: "Contacto",
-    titlePresentation: "Diseñador y desarrollador full-stack",
+    titlePresentation: "Desarrollador Web Full-Stack",
     descriptionPresentation: "Me dedico a programar y diseñar páginas web",
     titleAboutMe1: "Hola, soy Rubén",
     titleAboutMe2: "¡Un placer conocerte!",
@@ -52,7 +52,7 @@ export const languages = {
   EN: {
     language: "Español",
     contact: "Contact",
-    titlePresentation: "Designer and full-stack developer",
+    titlePresentation: "Full-Stack Web Developer",
     descriptionPresentation:
       "I am dedicated to programming and designing web pages",
     titleAboutMe1: "Hello, my name is Rubén",
