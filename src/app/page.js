@@ -87,7 +87,7 @@ export default function Home() {
           setIsLoading={setIsLoading}
         />
         <Header language={language} setLanguage={setLanguage} />
-        <section className="lg:py-0 pt-64">
+        <section className=" lg:py-0 pt-64">
           <Presentation language={language} />
         </section>
         <section className="fade-in-left">

@@ -27,8 +27,8 @@ function Scene({ currentSection, setIsLoading }) {
     // Define posiciones de cámara y modelo para escritorio y móvil
     const targetPositions = {
       0: {
-        modelPos: isMobile ? [0, 100, 0] : [0, -30, 0],
-        cameraPos: isMobile ? [550, 220, 550] : [350, 60, 350],
+        modelPos: isMobile ? [0, 20, 0] : [0, -30, 0],
+        cameraPos: isMobile ? [530, 220, 530] : [350, 60, 350],
       },
       1: {
         modelPos: isMobile ? [166, -75.5, -97.3] : [202, -75.5, -97.3],
