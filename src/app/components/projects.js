@@ -21,6 +21,11 @@ export default function Projects({ language }) {
         info2: `${languages[language].onlineStore2}`,
       },
       {
+        image: "/images/webThreeJS.webp",
+        info1: `${languages[language].webThreeJS1}`,
+        info2: `${languages[language].webThreeJS2}`,
+      },
+      {
         image: "/images/WordPressPhoto.webp",
         info1: `${languages[language].portfolioWordPress1}`,
         info2: `${languages[language].portfolioWordPress2}`,
@@ -38,6 +43,11 @@ export default function Projects({ language }) {
   const galleryItems = useMemo(
     () => [
       { type: "video", src: "/videos/ShopifyVideo.mp4", alt: "Video Shopify" },
+      {
+        type: "video",
+        src: "/videos/videoWebThreeJS.mp4",
+        alt: "Video Three.js",
+      },
     ],
     []
   );
@@ -152,22 +162,25 @@ export default function Projects({ language }) {
             ? `${languages[language].buttonLoadContent2}`
             : `${languages[language].buttonLoadContent1}`}
         </button>
-
         {isVideoVisible && (
           <>
             <p className="lg:w-2/5 text-center mb-2">
               {languages[language].alertText}
             </p>
-
-            <video
-              controls
-              width="480"
-              height="360"
-              className="lg:h-auto h-56  border-blue-500 rounded-lg shadow-lg"
-            >
-              <source src={galleryItems[0].src} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
+              {galleryItems.map((item, index) => (
+                <video
+                  key={index}
+                  controls
+                  width="480"
+                  height="360"
+                  className="lg:h-auto h-56  border-blue-500 rounded-lg shadow-lg mb-4"
+                >
+                  <source src={item.src} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+              ))}
+            </div>
           </>
         )}
       </div>

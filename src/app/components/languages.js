@@ -23,12 +23,12 @@ export const languages = {
     buttonInfoProjects: "Info",
     buttonLoadProjects: "Cargar más",
     titleContent: "Vídeos de proyectos",
-    descriptionContent: "Tienda online",
+    descriptionContent: "Tienda online y web con modelo 3D",
     buttonLoadContent1: "Ver contenido",
     buttonLoadContent2: "Ocultar contenido",
     alertText:
       "(Si hay lag en la página web por mostrar el vídeo, vuelve a ocultar el vídeo para no empeorar la experiencia).",
-    portfolioThreeJS1: "Portfolio React convertido a Next.js y Three.js",
+    portfolioThreeJS1: "Portfolio Next.js y Three.js",
     portfolioThreeJS2:
       "Se ha utilizado HTML, CSS, Tailwind, JavaScript, React, Next.js y Three.js.",
     onlineStore1: "Tienda online",
@@ -49,6 +49,9 @@ export const languages = {
     tools1: "Lenguajes y tecnologías",
     tools2: "Herramientas",
     help: "Pulsa en los textos para añadir color",
+    webThreeJS1: "Web con modelo 3D",
+    webThreeJS2:
+      "Se ha utilizado HTML, CSS, Tailwind, JavaScript, React, Next.js y Three.js",
   },
   EN: {
     name: "Rubén Pérez Lara",
@@ -73,12 +76,12 @@ export const languages = {
     buttonInfoProjects: "Info",
     buttonLoadProjects: "Load more",
     titleContent: "Project videos",
-    descriptionContent: "Online store",
+    descriptionContent: "Online store and web with 3D model",
     buttonLoadContent1: "View content",
     buttonLoadContent2: "Hide content",
     alertText:
       "(If the website is experiencing lag due to the video, please hide the video again to avoid a worsening of the experience.)",
-    portfolioThreeJS1: "Portfolio React converted to Next.js and Three.js",
+    portfolioThreeJS1: "Portfolio Next.js and Three.js",
     portfolioThreeJS2:
       "HTML, CSS, Tailwind, JavaScript, React, Next.js and Three.js have been used.",
     onlineStore1: "Online store",
@@ -99,5 +102,8 @@ export const languages = {
     tools1: "Languages ​​and technologies",
     tools2: "Tools",
     help: "Click on the texts to add color",
+    webThreeJS1: "Web with 3D model",
+    webThreeJS2:
+      "HTML, CSS, Tailwind, JavaScript, React, Next.js and Three.js have been used",
   },
 };
