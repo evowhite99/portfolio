@@ -15,7 +15,9 @@ function Header({ language, setLanguage }) {
       id="custom-shadow"
       className="relative w-full  flex justify-between lg:p-10 pt-10 pb-10 pl-4 pr-4 lg:mb-64 lg:text-2xl text-sm font-bold hover:bg-blue-400 duration-300 hover:bg-opacity-80"
     >
-      <div className="px-2 text-left text-white">Rubén Pérez Lara</div>
+      <div className="px-2 text-left text-white">
+        {languages[language].name}
+      </div>
 
       <div className="flex">
         <div

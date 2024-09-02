@@ -1,5 +1,6 @@
 export const languages = {
   ES: {
+    name: "Rubén Pérez Lara",
     language: "English",
     contact: "Contacto",
     titlePresentation: "Desarrollador Web Full-Stack",
@@ -50,6 +51,7 @@ export const languages = {
     help: "Pulsa en los textos para añadir color",
   },
   EN: {
+    name: "Rubén Pérez Lara",
     language: "Español",
     contact: "Contact",
     titlePresentation: "Full-Stack Web Developer",
