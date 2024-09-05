@@ -52,6 +52,9 @@ export const languages = {
     webThreeJS1: "Web con modelo 3D",
     webThreeJS2:
       "Se ha utilizado HTML, CSS, Tailwind, JavaScript, React, Next.js y Three.js",
+    newWeb1: "Web para un cliente",
+    newWeb2:
+      "(Página web en desarrollo). Portfolio del cliente sobre su música.",
   },
   EN: {
     name: "Rubén Pérez Lara",

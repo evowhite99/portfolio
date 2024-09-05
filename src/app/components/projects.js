@@ -10,6 +10,11 @@ export default function Projects({ language }) {
   const projects = useMemo(
     () => [
       {
+        image: "/images/templateMusic.webp",
+        info1: `${languages[language].newWeb1}`,
+        info2: `${languages[language].newWeb2}`,
+      },
+      {
         image: "/images/portfolioThreeJS.webp",
         link: "https://www.rubenportfolio.com",
         info1: `${languages[language].portfolioThreeJS1}`,
@@ -115,14 +120,14 @@ export default function Projects({ language }) {
                   href={project.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-blue-500 text-white px-2 hover:bg-blue-700 hover:scale-110 duration-150"
+                  className="bg-blue-500 text-white px-2 hover:bg-blue-700 mr-2 hover:scale-110 duration-150"
                 >
                   {languages[language].buttonLinkProjects}
                 </a>
               )}
               <button
                 onClick={() => handleInfoClick(index)}
-                className="bg-green-500 text-white hover:bg-green-700 px-2 ml-2 hover:scale-110 duration-150"
+                className="bg-green-500 text-white hover:bg-green-700 px-2  hover:scale-110 duration-150"
               >
                 {languages[language].buttonInfoProjects}
               </button>
