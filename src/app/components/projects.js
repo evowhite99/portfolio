@@ -102,7 +102,7 @@ export default function Projects({ language }) {
               alt={`Project ${index + 1}`}
               width={500}
               height={100}
-              className={`border lg:h-auto h-56 border-blue-500 transition-all duration-300 ${
+              className={`border lg:h-auto h-40 border-blue-500 transition-all duration-300 ${
                 infoVisible === index ? "opacity-50" : "opacity-100"
               }`}
             />
