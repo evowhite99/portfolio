@@ -46,8 +46,9 @@ export const languages = {
     message2: `Si necesitas un sitio web profesional o estás buscando a alguien para un
         proyecto de desarrollo web, no dudes en contactarme. Estoy disponible
         para colaborar tanto en proyectos individuales como empresariales.`,
-    tools1: "Lenguajes y tecnologías",
-    tools2: "Herramientas",
+    tools1: "Lenguajes Front-end",
+    tools2: "Lenguajes Back-end",
+    tools3: "Herramientas y alternativas",
     help: "Pulsa en los textos para añadir color",
     webThreeJS1: "Web con modelo 3D",
     webThreeJS2:
@@ -102,11 +103,14 @@ export const languages = {
     message2: `If you need a professional website or are looking for someone for a
         web development project, please do not hesitate to contact me. I am available
         to collaborate on both individual and business projects.`,
-    tools1: "Languages ​​and technologies",
-    tools2: "Tools",
+    tools1: "Front-end languages",
+    tools2: "Back-end languages",
+    tools3: "Tools and alternatives",
     help: "Click on the texts to add color",
     webThreeJS1: "Web with 3D model",
     webThreeJS2:
       "HTML, CSS, Tailwind, JavaScript, React, Next.js and Three.js have been used",
+    newWeb1: "Website for a client",
+    newWeb2: "(Website under development). Client's portfolio of his music.",
   },
 };
