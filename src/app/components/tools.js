@@ -55,7 +55,7 @@ export default function Tools({ language }) {
           id="custom-shadow"
           className="hover:bg-blue-400 hover:bg-opacity-80 duration-300 rounded-3xl pt-5 pb-5"
         >
-          <h1 className="text-3xl font-bold mb-5">
+          <h1 className="text-3xl font-bold pr-5 pl-5 mb-5">
             {languages[language].tools1}
           </h1>
           <div className="grid lg:grid-cols-5 grid-cols-3  gap-4">
@@ -77,7 +77,7 @@ export default function Tools({ language }) {
           id="custom-shadow"
           className="hover:bg-blue-400 hover:bg-opacity-80 duration-300 rounded-3xl pt-5 pb-5 mt-32"
         >
-          <h1 className="text-3xl font-bold  mb-5">
+          <h1 className="text-3xl font-bold pr-5 pl-5 mb-5">
             {languages[language].tools2}
           </h1>
           <div className="grid lg:grid-cols-5 grid-cols-3 gap-4">
@@ -99,7 +99,7 @@ export default function Tools({ language }) {
           id="custom-shadow"
           className="hover:bg-blue-400 hover:bg-opacity-80 duration-300 rounded-3xl pt-5 pb-5 mt-32"
         >
-          <h1 className="text-3xl font-bold  mb-5">
+          <h1 className="lg:text-3xl text-3xl font-bold  mb-5">
             {languages[language].tools3}
           </h1>
           <div className="grid lg:grid-cols-5 grid-cols-3 gap-4">
