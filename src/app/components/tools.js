@@ -8,9 +8,12 @@ export default function Tools({ language }) {
     () => [
       { name: "HTML", src: "/images/html.png" },
       { name: "CSS", src: "/images/css.png" },
+      { name: "SASS (básico)", src: "/images/sass.png" },
       { name: "Bootstrap", src: "/images/bootstrap.png" },
       { name: "Tailwind CSS", src: "/images/tailwind.png" },
       { name: "JavaScript", src: "/images/javascript.png" },
+      { name: "Jest (básico)", src: "/images/jest.png" },
+      { name: "TypeScript (básico)", src: "/images/typescript.png" },
       { name: "React.js", src: "/images/react.png" },
       { name: "Next.js", src: "/images/next.png" },
       { name: "Three.js", src: "/images/three.png" },
@@ -31,19 +34,23 @@ export default function Tools({ language }) {
 
   const otherTools = useMemo(
     () => [
-      { name: "WordPress", src: "/images/wordpress.png" },
-      { name: "Shopify", src: "/images/shopify.png" },
       { name: "VS Code", src: "/images/vscode.png" },
-      { name: "Git", src: "/images/git.png" },
-      { name: "GitHub", src: "/images/github.png" },
-      { name: "Linux terminal", src: "/images/linux.png" },
       { name: "PHPStorm", src: "/images/phpstorm.png" },
       { name: "Netbeans", src: "/images/netbeans.png" },
       { name: "Eclipse", src: "/images/eclipse.png" },
+      { name: "Linux terminal", src: "/images/linux.png" },
+
+      { name: "WordPress", src: "/images/wordpress.png" },
+      { name: "Shopify", src: "/images/shopify.png" },
+      { name: "Git", src: "/images/git.png" },
+      { name: "GitHub", src: "/images/github.png" },
+      { name: "Figma (básico)", src: "/images/figma.png" },
+
       { name: "Photopea", src: "/images/photopea.png" },
-      { name: "Power director", src: "/images/power.png" },
-      { name: "Unreal Engine 5", src: "/images/ue5.png" },
-      { name: "Blender", src: "/images/blender.png" },
+      { name: "UML", src: "/images/uml.png" },
+      { name: "XML", src: "/images/xml.png" },
+      { name: "XPath (básico)", src: "/images/xpath.png" },
+      { name: "XQuery (básico)", src: "/images/xquery.png" },
     ],
     []
   );
