@@ -26,9 +26,7 @@ export const languages = {
     descriptionContent: "Tienda online y web con modelo 3D",
     buttonLoadContent1: "Ver contenido",
     buttonLoadContent2: "Ocultar contenido",
-    alertText:
-      "(Si hay lag en la página web por mostrar el vídeo, vuelve a ocultar el vídeo para no empeorar la experiencia).",
-    portfolioThreeJS1: "Portfolio Next.js y Three.js",
+    portfolioThreeJS1: "Portfolio interactivo y con modelo 3D",
     portfolioThreeJS2:
       "Se ha utilizado HTML, CSS, Tailwind, JavaScript, React, Next.js y Three.js.",
     onlineStore1: "Tienda online",
@@ -53,7 +51,7 @@ export const languages = {
     webThreeJS1: "Web con modelo 3D",
     webThreeJS2:
       "Se ha utilizado HTML, CSS, Tailwind, JavaScript, React, Next.js y Three.js",
-    newWeb1: "Web para un cliente",
+    newWeb1: "Web profesional para un cliente",
     newWeb2:
       "(Página web en desarrollo). Portfolio del cliente sobre su música.",
   },
@@ -83,9 +81,7 @@ export const languages = {
     descriptionContent: "Online store and web with 3D model",
     buttonLoadContent1: "View content",
     buttonLoadContent2: "Hide content",
-    alertText:
-      "(If the website is experiencing lag due to the video, please hide the video again to avoid a worsening of the experience.)",
-    portfolioThreeJS1: "Portfolio Next.js and Three.js",
+    portfolioThreeJS1: "Interactive portfolio with 3D model",
     portfolioThreeJS2:
       "HTML, CSS, Tailwind, JavaScript, React, Next.js and Three.js have been used.",
     onlineStore1: "Online store",
@@ -110,7 +106,7 @@ export const languages = {
     webThreeJS1: "Web with 3D model",
     webThreeJS2:
       "HTML, CSS, Tailwind, JavaScript, React, Next.js and Three.js have been used",
-    newWeb1: "Website for a client",
+    newWeb1: "Professional Website for a client",
     newWeb2: "(Website under development). Client's portfolio of his music.",
   },
 };

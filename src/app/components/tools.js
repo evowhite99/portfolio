@@ -11,11 +11,13 @@ export default function Tools({ language }) {
       { name: "SASS (básico)", src: "/images/sass.png" },
       { name: "Bootstrap", src: "/images/bootstrap.png" },
       { name: "Tailwind CSS", src: "/images/tailwind.png" },
+
       { name: "JavaScript", src: "/images/javascript.png" },
       { name: "Jest (básico)", src: "/images/jest.png" },
       { name: "TypeScript (básico)", src: "/images/typescript.png" },
       { name: "React.js", src: "/images/react.png" },
       { name: "Next.js", src: "/images/next.png" },
+
       { name: "Three.js", src: "/images/three.png" },
     ],
     []

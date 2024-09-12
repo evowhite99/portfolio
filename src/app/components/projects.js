@@ -169,9 +169,6 @@ export default function Projects({ language }) {
         </button>
         {isVideoVisible && (
           <>
-            <p className="lg:w-2/5 text-center mb-2">
-              {languages[language].alertText}
-            </p>
             <div className="grid lg:grid-cols-3 grid-cols-1 gap-6">
               {galleryItems.map((item, index) => (
                 <video
